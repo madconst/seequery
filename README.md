@@ -35,8 +35,19 @@ SeeQuery will be useful for simple creation and manipulation of XHTML documents 
 
 ## Build
 
-To be done...
+```
+git clone https://github.com/madconst/seequery
+cd seequery
+mkdir build && cd $_
+cmake ..
+make
+make test
+```
 
-## Use
+## Run examples
 
-To be done...
+```
+examples/rects > rects.html
+```
+
+Then open `rects.html` using any up-to-date Web browser.
