@@ -18,7 +18,7 @@ $("body")
 }));
 $(".container").after($("<p/>", {
     {"class", "after-container"},
-    {"test", "I'm standing after '.container'"}
+    {"text", "I'm standing after '.container'"}
 }));
 
 std::cout << $ << std::endl;

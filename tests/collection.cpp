@@ -68,7 +68,7 @@ TEST_CASE("Test collection appending", "[collection][append]")
     {
         auto new_div = $("<div/>", {
             {"class", "new-div"},
-            {"test", "Yo!"}
+            {"text", "Yo!"}
         });
 
         $(".appeal").append(new_div);
@@ -91,7 +91,7 @@ TEST_CASE("Inserting after", "[collection][after]")
 
     $(".container").after($("<p/>", {
         {"class", "after-container"},
-        {"test", "I'm standing after '.container'"}
+        {"text", "I'm standing after '.container'"}
     }));
 
     auto body_children = $("body").children();
@@ -119,7 +119,7 @@ TEST_CASE("Inserting before", "[collection][before]")
 
     $(".container").before($("<p/>", {
         {"class", "before-container"},
-        {"test", "I'm standing before '.container'"}
+        {"text", "I'm standing before '.container'"}
     }));
 
     auto body_children = $("body").children();
