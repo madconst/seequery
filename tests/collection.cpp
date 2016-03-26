@@ -2,8 +2,6 @@
 #include "../core/collection.h"
 #include "../core/node.h"
 
-#include <iostream> // del
-
 TEST_CASE("Test selection by id/tag/class", "[collection][selection]")
 {
     // Create document:
