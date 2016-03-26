@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.2)
 
 add_definitions("-std=c++11")
-add_definitions("-Wall")
+add_definitions("-Wall -Wextra")
 add_definitions("-Wno-unknown-pragmas")
 
 include_directories (${CMAKE_SOURCE_DIR})

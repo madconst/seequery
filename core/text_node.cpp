@@ -18,21 +18,21 @@ namespace SeeQuery
     {
         return serialize();
     }
-    std::string TextNode::attr(const std::string& key) const
+    std::string TextNode::attr(const std::string&) const
     {
         return std::string(); // return empty string
     }
-    void TextNode::attr(const std::string& key, const std::string& value)
+    void TextNode::attr(const std::string&, const std::string&)
     { /* Do nothing. TextNode ignores setting attribute */ }
-    Node* TextNode::getElementById(const std::string& id)
+    Node* TextNode::getElementById(const std::string&)
     {
         return nullptr;
     }
-    std::list<Node*> TextNode::getElementsByTagName(const std::string& tag_name)
+    std::list<Node*> TextNode::getElementsByTagName(const std::string&)
     {
         return std::list<Node*>();
     }
-    std::list<Node*> TextNode::getElementsByClassName(const std::string& class_name)
+    std::list<Node*> TextNode::getElementsByClassName(const std::string&)
     {
         return std::list<Node*>();
     }
@@ -40,12 +40,12 @@ namespace SeeQuery
     {
         return new TextNode(text_);
     }
-    Node* TextNode::append(Node* child)
+    Node* TextNode::append(Node*)
     {
         // Do nothing. TextNode ignores appending.
         return this; 
     }
-    Node* TextNode::prepend(Node* child)
+    Node* TextNode::prepend(Node*)
     {
         // Do nothing. TextNode ignores appending.
         return this; 

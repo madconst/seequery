@@ -11,9 +11,9 @@ namespace SeeQuery
     public:
         TextNode(const std::string& text);
 
-        Node* getElementById(const std::string& id);
-        std::list<Node*> getElementsByTagName(const std::string& tag_name);
-        std::list<Node*> getElementsByClassName(const std::string& class_name);
+        Node* getElementById(const std::string&);
+        std::list<Node*> getElementsByTagName(const std::string&);
+        std::list<Node*> getElementsByClassName(const std::string&);
 
         Node* clone() const;
 
@@ -21,11 +21,11 @@ namespace SeeQuery
         std::string text() const;
         std::string html() const;
 
-        std::string attr(const std::string& key) const;
-        void attr(const std::string& key, const std::string& value);
+        std::string attr(const std::string&) const;
+        void attr(const std::string&, const std::string&);
 
-        Node* append(Node* child);
-        Node* prepend(Node* child);
+        Node* append(Node*);
+        Node* prepend(Node*);
 
     private:
         std::string text_;
