@@ -50,4 +50,7 @@ make test
 examples/rects > rects.html
 ```
 
-Then open `rects.html` using any up-to-date Web browser.
+Then open `rects.html` using any up-to-date Web browser. You will see something like this:
+
+![Rects Example]
+(https://raw.githubusercontent.com/madconst/seequery/master/rects_view_in_browser.png)
