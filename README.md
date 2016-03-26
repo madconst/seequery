@@ -2,7 +2,7 @@
 
 SeeQuery is a C++ mimic of jQuery, the most popular JavaScript library. SeeQuery is implemented in C++11 and takes advantage of its syntax features to make the code look very much like jQuery. Consider the following example:
 
-```
+```cpp
 // Create document:
 SeeQuery::SeeQuery $;
 
